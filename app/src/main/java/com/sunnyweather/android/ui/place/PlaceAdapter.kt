@@ -22,14 +22,12 @@ class PlaceAdapter(private val fragment: Fragment, private val placeList: List<P
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.place_item, parent, false)
         return ViewHolder(view)
-        TODO("Not yet implemented")
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val place = placeList[position]
         holder.placeName.text = place.name
         holder.placeAddress.text = place.address
-        TODO("Not yet implemented")
     }
 
     override fun getItemCount() = placeList.size
