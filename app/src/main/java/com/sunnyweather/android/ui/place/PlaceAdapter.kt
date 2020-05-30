@@ -12,10 +12,10 @@ import com.sunnyweather.android.logic.model.Place
 import com.sunnyweather.android.ui.weather.WeatherActivity
 import kotlinx.android.synthetic.main.place_item.view.*
 
-class PlaceAdapter(private val fragment: Fragment, private val placeList: List<Place>):
+class PlaceAdapter(private val fragment: Fragment, private val placeList: List<Place>) :
     RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
 
-    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val placeName: TextView = view.findViewById(R.id.placeName)
         val placeAddress: TextView = view.findViewById(R.id.placeAddress)
 

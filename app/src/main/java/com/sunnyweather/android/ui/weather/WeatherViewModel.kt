@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.sunnyweather.android.logic.Repository
 import com.sunnyweather.android.logic.model.Location
 
-class WeatherViewModel: ViewModel() {
+class WeatherViewModel : ViewModel() {
 
     private val locationLiveData = MutableLiveData<Location>()
 
